@@ -1,0 +1,14 @@
+.DS_Store
+
+# Windows 클라이언트 빌드 산출물
+client/stoneage-client/Debug/
+client/stoneage-client/Release/
+client/stoneage-client/VER25_DEBUG/
+client/stoneage-client/VER25_RELEASE/
+client/stoneage-client/*.obj
+client/stoneage-client/*.exe
+client/stoneage-client/*.pdb
+client/stoneage-client/*.ilk
+client/stoneage-client/*.suo
+client/stoneage-client/*.user
+client/stoneage-client/.vs/
