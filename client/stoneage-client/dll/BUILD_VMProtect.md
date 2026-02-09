@@ -23,8 +23,10 @@ cd C:\Users\admin\Desktop\sa2\stoneage-new\client\stoneage-client\dll
 
 3. Compile the DLL:
 ```cmd
-cl /LD /O2 VMProtectSDK_dummy.cpp /Fe:VMProtectSDK32.dll kernel32.lib /link /DEF
+cl /LD /O2 VMProtectSDK_dummy.cpp /Fe:VMProtectSDK32.dll kernel32.lib /link /DEF:VMProtectSDK32.def
 ```
+
+**Note**: The `/DEF:VMProtectSDK32.def` is crucial - it ensures function names are exported correctly without C++ name mangling.
 
 ### Option 2: Using CMake (Alternative)
 
