@@ -12,8 +12,8 @@ The client has server IP addresses **hardcoded** in the source code. To connect 
 
 ## Your Server Information
 
-- **IP Address**: 52.65.189.156
-- **Port**: 9065
+- **IP Address**: 54.206.21.66
+- **Port**: 19065
 
 ## Required Changes
 
@@ -72,9 +72,9 @@ gmgroup[0].num = 1;
 gmgroup[0].startindex = 0;
 gmgroup[0].used = 1;
 
-strcpy( gmsv[0].ipaddr, "52.65.189.156");
+strcpy( gmsv[0].ipaddr, "54.206.21.66");
 strcpy( gmsv[0].name, "Main Server");
-strcpy( gmsv[0].port, "9065");
+strcpy( gmsv[0].port, "19065");
 gmsv[0].used = '1';
 ```
 
@@ -157,10 +157,10 @@ Before rebuilding, test if the server is accessible:
 
 ```cmd
 # Windows PowerShell
-Test-NetConnection -ComputerName 52.65.189.156 -Port 9065
+Test-NetConnection -ComputerName 54.206.21.66 -Port 19065
 
 # Command Prompt
-telnet 52.65.189.156 9065
+telnet 54.206.21.66 19065
 ```
 
 If this fails, the server may not be running or port 9065 is blocked.
