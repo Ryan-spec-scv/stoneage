@@ -21,7 +21,9 @@
 #include "../systeminc/talkwindow.h"
 #endif
 #include "../systeminc/EncryptClient.h"
+#if __has_include(<atlconv.h>)
 #include <atlconv.h>
+#endif
 extern INPUT_HISTORY InputHistory ;
 extern STR_BUFFER SubBuffer; 
 
